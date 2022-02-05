@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>login</title>
+    <link rel = "stylesheet" href = "hello.css">
+</head>
+<body>
+    <div class ="menu-bar">
+    <ul >
+        <li class="active"><a href="#">Make appointment</a></li>
+        <li><a href="#">Doctor</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About us</a></li>
+    </ul>
+    </div>
+    <div class = "hello" >
+        <div class = "form-box" > 
+        <div class="button-box">
+            <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+        <button type="button" class="toggle-btn" onclick="Register()">Register</button>
+
+    </div>
+    
+    <form id="login" class="input-group">
+        <input type="text" class="input-field" placeholder="username"
+        required>
+        <input type="text" class="input-field" placeholder="Password"
+        required>
+        <input type="checkbox" class="check-box"><span>Remenber password</span>
+        <button type="sumbit" class="sumbit-btn">Log in</button>
+        
+
+    </form>
+    <form id="Register" class="input-group">
+        <div class="input-box">
+            <span class="details">Full name</span>
+        <input type="text"  >
+        </div>
+        <div class="input-box">
+            <span class="details">Age</span>
+        <input type="text"  >
+        </div>
+        <div class="input-box">
+            <span class="details">Sex</span>
+            <input type="radio" id="sex" name="sex" value="1" />Female
+            <input type="radio" id="sex" name="sex" value="0" />Male
+        </div>
+        <div class="input-box">
+            <span class="details">Address</span>
+        <input type="text"  >
+        </div>
+        <div class="input-box">
+            <span class="details">patient id</span>
+        <input type="text"  >
+        </div>
+        <div class="input-box">
+            <span class="details">Reg no</span>
+        <input type="text"  >
+        </div>
+
+        
+       
+
+        <button type="sumbit" class="sumbit-btn">Register</button>
+        </div>
+        
+
+    </form>
+    </div>
+    
+    </div>
+    <script>
+       var x = document.getElementById("login");
+       var y = document.getElementById("Register") 
+       var z = document.getElementById("btn") 
+      
+        function  Register(){
+           x.style.left = "-400px"
+           y.style.left = "50px"
+           z.style.left = "110px"
+
+       }
+       function  login(){
+           x.style.left = "50px"
+           y.style.left = "450px"
+           z.style.left = "0"
+
+       }
+
+
+    </script>
+</body>
+</html>
